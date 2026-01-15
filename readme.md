@@ -6,16 +6,16 @@ Project: UI and API Test Automation with Selenium, REST Assured and Allure
 ##  Технологии и зависимости
 
 | Компонент         | Версия |
-|-------------------|------|
-| Java              | 17   |
-| Maven             | 3.8+ |
+|-------------------|--------|
+| Java              | 11     |
+| Maven             | 3.8+   |
 | JUnit             | 4.13.2 |
-| REST Assured      | 4.4.0 |
+| REST Assured      | 4.4.0  |
 | Allure Framework  | 2.15.0 |
-| AspectJ           | 1.9.7 |
-| WebDriverManager  | 5.9.2 |
-|Apache Commons Lang3|3.18.0|
-| SLF4J (Simple Logger)| 2.0.13  |Просто чтобы не было сообщения ,что он нужен
+| AspectJ           | 1.9.7  |
+| WebDriverManager  | 5.9.2  |
+|Apache Commons Lang3| 3.18.0 |
+| SLF4J (Simple Logger)| 2.0.13 |Просто чтобы не было сообщения ,что он нужен
 
 
 ## ▶️ Как запустить тесты

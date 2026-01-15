@@ -12,12 +12,14 @@ public class DriverManager {
 
     public static WebDriver createDriver(String browser) throws RemoteException {
         if (browser.equalsIgnoreCase("chrome")) {
-            WebDriverManager.chromedriver().browserVersion("142").setup();
+            WebDriverManager.chromedriver().setup();
+
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--incognito");//Запуск в режиме инкогнито
             return new ChromeDriver(options);
         }
         else if (browser.equalsIgnoreCase("yandex")) {
+
             WebDriverManager.chromedriver().browserVersion("142").setup();//с версией 143 у меня не работало
 
             ChromeOptions options = new ChromeOptions();
