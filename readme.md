@@ -19,11 +19,12 @@ Project: UI and API Test Automation with Selenium, REST Assured and Allure
 
 
 ## ▶️ Как запустить тесты
-Драверы переключаются автоматически ,но для запуска Яндекс браузера нужно
+
+Для запуска Яндекс браузера нужно
 указать путь в классе  [`DriverManager`](src/main/java/utils/DriverManager.java).
 к исполняемому файлу на Вашем устройстве
 Выполните в терминале из корня проекта:
 
 ```bash
-mvn clean test
-mvn allure:serve
+mvn test -Dbrowser=chrome
+mvn test -Dbrowser=yandex
