@@ -1,5 +1,4 @@
 package utils;
-
 import java.time.Duration;
 
 public class Constants {

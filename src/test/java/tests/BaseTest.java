@@ -1,6 +1,6 @@
 package tests;
 
-import io.qameta.allure.Allure;
+
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
@@ -56,7 +56,7 @@ public abstract class BaseTest {
         // Инициализация страниц
         mainPage = new MainPage(driver);
         loginPage = new LoginPage(driver);
-        Allure.description("Тест запущен в браузере: " + browser);
+
     }
 
     @After
