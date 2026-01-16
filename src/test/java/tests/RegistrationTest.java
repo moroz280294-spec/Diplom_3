@@ -18,9 +18,7 @@ public class RegistrationTest extends BaseTest {
 
     private User user;
     private UserSteps userSteps;
-    public RegistrationTest(String browser) {
-        super(browser);
-    }
+
     @Before
     public void init() {
         userSteps = new UserSteps();

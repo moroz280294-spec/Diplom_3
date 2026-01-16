@@ -9,6 +9,7 @@ import org.junit.Before;
 import org.junit.Test;
 import pages.LoginPage;
 import steps.UserSteps;
+
 import static org.apache.http.HttpStatus.SC_OK;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -18,9 +19,6 @@ public class LoginTest extends BaseTest {
     private User user;
     private UserSteps userSteps;
 
-    public  LoginTest(String browser) {
-        super(browser);
-    }
 
     @Before
     public void initUser() {

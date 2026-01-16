@@ -2,13 +2,10 @@ package tests;
 
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
+
 import static org.junit.Assert.assertTrue;
 
 public class SwitchTest extends BaseTest {
-
-    public SwitchTest(String browser) {
-        super(browser);
-    }
 
     @Test
     @DisplayName("UI:Проверка переключения на вкладку 'Соусы'")
