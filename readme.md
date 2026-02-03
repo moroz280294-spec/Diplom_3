@@ -27,4 +27,3 @@ Project: UI and API Test Automation with Selenium, REST Assured and Allure
 
 ```bash
 mvn test -Dbrowser=chrome
-mvn test -Dbrowser=yandex
