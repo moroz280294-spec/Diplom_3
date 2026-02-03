@@ -109,6 +109,7 @@
                 <version>2.10.0</version>
                 <configuration>
                     <reportVersion>2.15.0</reportVersion>
+                    <reportDirectory>target/allure-report</reportDirectory>
                 </configuration>
             </plugin>
             <plugin>
