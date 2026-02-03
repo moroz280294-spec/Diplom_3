@@ -9,7 +9,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    permissions:  # ← Добавьте эту секцию
+    permissions:
       contents: write
       pages: write
 
@@ -36,3 +36,10 @@ jobs:
         if: always()
 
       - name: Deploy report to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main' && always()
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./target/allure-report
+          publish_branch: gh-pages
+          force_orphan: true
