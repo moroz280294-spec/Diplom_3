@@ -1,8 +1,8 @@
 Diplom_3
 Project: UI and API Test Automation with Selenium, REST Assured and Allure
 Проект автоматизированного тестирования веб-приложения с использованием UI-тестов (Selenium) и API-тестов (REST Assured) на Java. Поддерживает генерацию отчётов через Allure Report.
+[![Tests](https://github.com/moroz280294-spec/Diplom_3/actions/workflows/tests.yml/badge.svg)](https://github.com/moroz280294-spec/Diplom_3/actions)
 
-Технологии и зависимости
 ##  Технологии и зависимости
 
 | Компонент         | Версия |
