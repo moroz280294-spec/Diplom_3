@@ -8,34 +8,28 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class DriverManager {
 
     public static WebDriver createDriver(String browser) {
+        boolean isHeadless = Boolean.parseBoolean(System.getProperty("headless", "false"))
+                || Boolean.parseBoolean(System.getenv("HEADLESS"));
 
         switch (browser.toLowerCase()) {
-
             case "chrome":
                 WebDriverManager.chromedriver().setup();
 
-                ChromeOptions chromeOptions = new ChromeOptions();
-                chromeOptions.addArguments("--incognito");
+                ChromeOptions options = new ChromeOptions();
+                options.addArguments("--incognito");
 
-                return new ChromeDriver(chromeOptions);
+                if (isHeadless) {
+                    options.addArguments("--headless=new");
+                    options.addArguments("--no-sandbox");
+                    options.addArguments("--disable-dev-shm-usage");
+                    options.addArguments("--window-size=1920,1080");
+                }
 
-            case "yandex":
-                WebDriverManager.chromedriver()
-                        .browserVersion("142")
-                        .setup();
+                return new ChromeDriver(options);
 
-                ChromeOptions yandexOptions = new ChromeOptions();
-                yandexOptions.setBinary(
-                        "C:\\Users\\user\\AppData\\Local\\Yandex\\YandexBrowser\\Application\\browser.exe"
-                );
-                yandexOptions.addArguments("--incognito");
-
-                return new ChromeDriver(yandexOptions);
 
             default:
-                throw new IllegalArgumentException(
-                        "Unsupported browser: " + browser
-                );
+                throw new IllegalArgumentException("Unsupported browser: " + browser);
         }
     }
 }
