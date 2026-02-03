@@ -15,7 +15,7 @@ Project: UI and API Test Automation with Selenium, REST Assured and Allure
 | AspectJ           | 1.9.7  |
 | WebDriverManager  | 5.9.2  |
 |Apache Commons Lang3| 3.18.0 |
-| SLF4J (Simple Logger)| 2.0.13 |Просто чтобы не было сообщения ,что он нужен
+| SLF4J (Simple Logger)| 2.0.13 |
 
 
 ## ▶️ Как запустить тесты
