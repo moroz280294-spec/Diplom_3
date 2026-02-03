@@ -20,9 +20,7 @@ Project: UI and API Test Automation with Selenium, REST Assured and Allure
 
 ## ▶️ Как запустить тесты
 
-Для запуска Яндекс браузера нужно
-указать путь в классе  [`DriverManager`](src/main/java/utils/DriverManager.java).
-к исполняемому файлу на Вашем устройстве
+
 Выполните в терминале из корня проекта:
 
 ```bash
